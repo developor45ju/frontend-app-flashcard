@@ -1,0 +1,48 @@
+.flashcard {
+  width: 300px;
+  height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.flashcard .front,
+.flashcard .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.5s ease-in-out;
+}
+.flashcard .front {
+  z-index: 1;
+}
+.flashcard .back {
+  z-index: 0;
+  transform: rotateY(180deg);
+}
+.flashcard:hover .front {
+  transform: rotateY(-180deg);
+}
+.flashcard:hover .back {
+  transform: rotateY(0);
+}
+.flashcard .word {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 24px;
+  color: #333;
+}
+.flashcard .image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.flashcard .translation {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #ccc;
+}
+
+/*# sourceMappingURL=style.css.map */
