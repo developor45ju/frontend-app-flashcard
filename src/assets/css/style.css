@@ -45,4 +45,59 @@
   color: #ccc;
 }
 
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+header h1 {
+  margin: 0;
+}
+header .header-buttons {
+  float: right;
+}
+header .header-buttons a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+header .header-buttons a:hover {
+  color: #ccc;
+}
+
+main {
+  padding: 20px;
+}
+main .flashcards-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .add-flashcard-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+main .add-flashcard-button i {
+  margin-right: 10px;
+}
+main .add-flashcard-button:hover {
+  background-color: #ccc;
+}
+
 /*# sourceMappingURL=style.css.map */
