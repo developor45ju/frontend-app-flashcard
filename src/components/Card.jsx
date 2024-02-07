@@ -1,6 +1,6 @@
 import '../assets/css/style.css';
 
-const Card = ( props ) => {
+const Card = (props) => {
     const word = props.word;
     const wordTransled = props.wordTransled;
     const image = props.image;
